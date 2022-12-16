@@ -28,7 +28,8 @@ void imprime_matriz(int *m)
             printf("%d ", *(m + i * MAX + j));
         }
         printf("\n");
-    } 
+    }
+    printf("\n");
 }
 
 int checa_limites(int row, int col)
@@ -69,13 +70,27 @@ void calcula_blocos(int *m)
     }
 }
 
+void recebe_comando(int *row, int *col)
+{
+    scanf("%d %d", row, col);
+}
+
 int main()
 {
     int *p_matriz = cria_matriz();
+    int *p_matriz_h = cria_matriz();
+    int row, col;
+    int running = 1;
 
     system("clear");
     insere_bombas(p_matriz);
     calcula_blocos(p_matriz);
-    imprime_matriz(p_matriz);
+
+    recebe_comando(&row, &col);
+    if (checa_limites(row, col))
+    {
+        imprime_matriz(p_matriz_h);
+    }
+    
     return 0;
 }
