@@ -31,6 +31,13 @@ void imprime_matriz(int *m)
     } 
 }
 
+int checa_limites(int row, int col)
+{
+    if (row < 0 || row > MAX || col < 0 || col > MAX)
+        return 0;
+    return 1;
+}
+
 int main()
 {
     int *p_matriz = cria_matriz();
