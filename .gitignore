@@ -6,3 +6,11 @@ mina
 .nfs000000000ef484ac00000015
 .nfs000000000ef484ad00000016
 .nfs000000000ef484ae00000017
+mina.exe
+.gitignore
+.vs/ProjectSettings.json
+mine.exe
+.vs/slnx.sqlite
+.vs/campo minado/v16/.suo
+.vs/campo minado/v16/Browse.VC.db
+.vs/VSWorkspaceState.json
